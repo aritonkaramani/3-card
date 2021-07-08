@@ -1,0 +1,117 @@
+body {
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    display: block;
+    justify-items: center;
+    
+    
+}
+.left {
+    background: hsl(31, 77%, 52%);
+    padding: 5% 5% 5% 5%;
+    border-radius: 10px 0 0 10px;
+}
+.mid {
+    background: hsl(184, 100%, 22%);
+    padding: 5% 5% 5% 5%;
+}
+.right {
+    background: hsl(179, 100%, 13%);
+    padding: 5% 5% 5% 5%;
+    border-radius:0 10px 10px 0;
+}
+.card {
+    display: flex;;
+    flex-direction: row;
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+h1 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    font-size:38px;
+}
+p {
+    font-family: 'Lexend Deca';
+    line-height: 1.6;
+}
+button {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    border: none;
+    outline: none;
+    position: absolute;
+    width: 8vw;
+    bottom: 10%;
+    border-radius: 45px;
+}
+button:hover{
+    border:solid white;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.buttonleft {
+    color: hsl(31,77%,52%);
+}
+.buttonleft:hover{
+    background-color:hsl(31, 77%, 52%);
+}
+.buttonmid {
+    color: hsl(184, 100%, 22%);
+}
+.buttonmid:hover{
+    background-color:hsl(184, 100%, 22%);
+}
+.buttonright {
+    color: hsl(179, 100%, 13%);
+}
+.buttonright:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+.attribution {
+    color: black;
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    justify-content: center;
+}
+
+@media screen and (max-width:670px){
+    .card{
+        margin: 10%;
+        flex-direction: column;
+        top: 0;
+    }
+    .left{
+        border-radius:10px 10px 0 0;
+        padding: 10% 10% 10% 10%;
+    }
+    .right{
+        border-radius: 0 0 10px 10px;
+        padding: 10% 10% 10% 10%;
+    }
+    .mid{
+        padding: 10% 10% 10% 10%;
+    }
+    button{
+        position: relative;
+        bottom: 0;
+        width: 20vw;
+        height: 5vh;
+    }
+    .attribution{
+        position: fixed;
+        bottom: 20px;
+    }
+
+    }
+    
